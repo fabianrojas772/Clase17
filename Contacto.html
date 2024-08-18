@@ -14,8 +14,51 @@
         <a href="Galeria.html">Galeria</a>
         <a href="Contacto.html">Contacto</a>
       </nav>
+
       <main>
-        <h1>Contacto</h1>
+        <h1>Contactanos</h1>
+
+        <section>
+          <ul>
+            <li><p>nombre</p></li>
+
+            <form action="index.html" method="get" novalidate>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="ingrese su nombre"
+                minlength="5"
+                maxlength="10"
+                pattern="^[0-9]*$"
+                required
+              />
+              <input
+                type="number"
+                name="Numero"
+                step="0.5"
+                placeholder="ingrese su documento"
+                pattern="[0-9]*"
+                required
+                id="number"
+              />
+              <input type="color" name="color" />
+              <div>
+                <input type="checkbox" id="html" />
+                <label for="html">HTML</label>
+              </div>
+              <div>
+                <input type="checkbox" id="css" />
+                <label for="css">CSS</label>
+              </div>
+              <div>
+                <input type="checkbox" id="js" />
+                <label for="js">JavaScript</label>
+              </div>
+
+              <button>Enviar</button>
+            </form>
+          </ul>
+        </section>
       </main>
     </header>
   </body>
